@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #212529;
+}
+
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  border-radius: 18px;
+  background: #eef2ff;
+  font-size: 32px;
+}
+
+.auth-card h2 {
+  font-weight: 700;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  margin-bottom: 25px;
+  background: #f1f3f5;
+  border-radius: 10px;
+}
+
+.auth-tabs button {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-tabs button.active {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.switch-btn {
+  border: none;
+  background: none;
+  color: #0d6efd;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.navbar {
+  min-height: 65px;
+}
+
+.navbar-brand {
+  font-size: 20px;
+}
+
+/* =========================
+   SUMMARY CARDS
+========================= */
+
+.summary-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+}
+
+.summary-card p {
+  margin-bottom: 8px;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.summary-card h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.balance-card {
+  border-left: 5px solid #0d6efd;
+}
+
+.income-card {
+  border-left: 5px solid #198754;
+}
+
+.expense-card {
+  border-left: 5px solid #dc3545;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+  border: none;
+  border-radius: 16px;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+.form-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 9px;
+  padding: 10px 12px;
+  border: 1px solid #dee2e6;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.2rem
+    rgba(13, 110, 253, 0.12);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  padding: 10px 15px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background: #f8f9fa;
+  color: #495057;
+  font-size: 13px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.table tbody td {
+  vertical-align: middle;
+}
+
+.table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.badge {
+  padding: 7px 10px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+/* =========================
+   ALERT
+========================= */
+
+.alert {
+  border-radius: 10px;
+  border: none;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .auth-card {
+    padding: 25px 20px;
+  }
+
+  .navbar {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .navbar-brand {
+    font-size: 17px;
+  }
+
+  .summary-card h3 {
+    font-size: 24px;
+  }
+
+  .table {
+    min-width: 750px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+
+  .navbar .text-white {
+    font-size: 13px;
+  }
+
+  .summary-card {
+    padding: 18px;
+  }
+}
